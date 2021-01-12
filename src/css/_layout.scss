@@ -1,0 +1,51 @@
+//Header mit Inhalt und Button//
+
+.header {  
+    color: #ffffff;      
+    height: 65vh; 
+
+      @media (max-width: 768px) {
+        height: 75vh;
+      }          
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+                      url(../images/FEND-Coffee-latte-art-3.jpg);                           
+    background-size: cover;            
+    background-position: center;
+    position: top;
+    position: relative;
+  
+      &--subpage {
+          height: 65vh;
+          background-image: url(../images/FEND-Coffee-shop.jpg);
+          background-size: cover;
+          background-position: center;
+          position: top;
+
+          @media (max-width: 768px) {
+            height: 75vh;
+          }
+        }
+  
+      &--innen {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        position: relative;
+        margin: 20.235vh 0 0 0;
+
+        @media (max-width: 768px){
+          margin: 27.94vh 0 0 0;
+        }
+      }
+  
+      &__h1-sub {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+
+      @media (max-width: 768px) {
+        padding-top: 3.6rem;
+      }
+      }
+    }

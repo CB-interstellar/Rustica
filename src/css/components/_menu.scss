@@ -1,0 +1,101 @@
+//Menu-Leiste wird später Scroll-fähig und ändert Farbe//
+
+.header__menu {
+    position: relative;
+}
+
+.header__logo {
+    height: 3.5rem;
+           
+    &--box {
+      padding: 1rem 0 0 7.153vw;
+    }
+  }
+  
+
+.burger--box{
+  position: absolute;
+  top: 2.1rem;
+  right: 7.153vw;
+
+  @media (min-width: 769px) {
+    visibility: hidden;
+  }
+}
+
+
+
+.navigation {
+
+    @media (max-width: 768px) {
+        visibility: hidden;
+    }
+
+    float: inline-end;
+    font-size: 1.8rem;
+    line-height: 2.109rem;
+    position: absolute;
+    right: 7.153vw;
+    top: 1.8rem;
+     
+    li {
+      list-style-type: none;                  
+      display: inline-block;  
+    }
+  
+    a {
+      text-decoration: none;
+      color: $farbe-weiss;
+      position: relative;
+  
+      &::after {
+        position: absolute;
+         content: "";
+         bottom: 0;
+         left: 0;
+         height: 1px;
+         line-height: 1;
+         width: 100%;
+         background-color: $farbe-weiss;
+         transform-origin: right bottom;
+         transform: scaleX(0);
+         transition: transform 0.4s linear;
+        }
+      &:hover::after,
+      &:active::after {
+        transform: scaleX(1);
+        transform-origin: left bottom;
+        transition: transform 0.4s linear;
+        }
+    }
+  }
+  
+.herkunft {
+    margin: 4.75vw;
+  }
+
+
+
+//Subpage Menu//
+
+.x-box {
+    text-align: right;
+    padding-top: 1.9rem;
+    padding-right: 2.65rem;
+  }
+
+
+.body__menu {
+    background-color: $farbe-anthrazit;
+  }
+  
+.menu--box {
+    margin-top: 19.2rem;
+  }
+  
+.menu--mobil {
+    color: $farbe-weiss;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3.2rem 2rem 3.2rem 6rem;
+  }

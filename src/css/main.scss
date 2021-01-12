@@ -1,0 +1,24 @@
+@import "variables";
+@import "base";
+@import "typography";
+@import "mixins";
+@import "layout";
+@import "components/hero";
+@import "components/buttons";
+@import "components/menu";
+
+
+
+//:root {
+//  --div-color: red;   //Was ist das ?//
+//}
+
+
+
+
+//so kriegt man sie, die Elemente auseinander:
+//   .menu--mobil:link {
+//    display: inline-block;
+//    padding: 1rem 2rem;
+//}
+
