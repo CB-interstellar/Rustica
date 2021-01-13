@@ -47,6 +47,10 @@
       text-decoration: none;
       color: $farbe-weiss;
       position: relative;
+
+      &.active {
+        background-color: red;
+      }
   
       &::after {
         position: absolute;
@@ -97,5 +101,5 @@
     color: $farbe-weiss;
     text-decoration: none;
     display: inline-block;
-    padding: 3.2rem 2rem 3.2rem 6rem;
+    padding: 3.2rem 4rem 3.2rem 6rem;
   }

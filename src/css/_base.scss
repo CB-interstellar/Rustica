@@ -11,7 +11,7 @@ main {
     color: yellow;
 
     @media (min-width: 768px) {
-      color: var(--div-color);
+      color: black;
     }
   }
 } 
@@ -33,11 +33,6 @@ html {
 
 body {
   box-sizing: border-box;
-  
-  
-  @media (max-width: 768px){
-    font-size: 1.4rem;
-    line-height: 1.3%;
-    font-weight: 400;
-  }
 }
+
+

@@ -1,3 +1,25 @@
+//Links und mehr ...//
+
+.link--mehr {
+  text-decoration: none;
+  color: black;
+
+  @media (max-width: 768px) {
+      visibility: hidden;
+  }
+
+  &:hover {
+      text-decoration: underline;
+  }
+
+  &:active {
+      color: $farbe-kraftpapier;
+  }
+}
+
+
+
+
 //Button im Header//
 
 .btn--brown:link,

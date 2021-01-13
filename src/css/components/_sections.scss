@@ -1,0 +1,175 @@
+//Sektion Rösterei und Cafe//
+.sec__roest {
+    padding-top: 12.6rem;
+    max-height: 64.6rem;
+    display: flex;
+    
+     @media (max-width: 768px) {
+         flex-wrap: wrap;
+         padding-top: 6rem;
+    }
+
+    &--text {
+        width: 50.5vw;
+        padding: 0 6rem 20rem 12.6rem;
+    
+        @media (max-width: 768px) {
+            width: 100%;
+            padding: 0 2.4rem;
+            height: 21rem;
+    
+            h2 {
+                line-height: 3.4rem;
+            }
+        }
+    }
+
+    &--p {
+        padding: 3.5rem 0 1.75rem 0 ;
+
+        @media (max-width: 768px) {
+            padding: 2rem 0 1rem 0;
+            line-height: 1.8rem;
+        }
+    }
+
+    &--adresse {
+        width: 31.5rem;
+        padding: 1.75rem 3rem 0 0;
+        display: inline-block;
+    
+        @media (max-width: 768px) {
+            line-height: 1.8rem;
+            padding: 1rem 0.5rem 0 0;
+            width: 15.6rem;
+        }
+    }
+
+    &--zeiten {
+        width: 15rem;
+        padding: 1.75rem 0 0 0rem;
+        display: inline-block;
+    
+        @media (max-width: 768px) {
+            line-height: 1.8rem;
+        }
+    }
+
+    &--bilder {
+        width: 60rem;
+        padding: 0 0 0 0;
+        margin-right: 10rem;
+    
+        @media (max-width: 769px) {
+            width: 100%;
+            padding: 0 2.4rem 0 11rem;
+            text-align: right;
+            margin: 0;
+        }
+    
+        @media (max-width: 304px) {
+            padding-top: 7rem;
+        }
+    }
+
+    &--img {
+        width: 60rem;
+    
+         @media (max-width: 1130px) {
+             width: 45rem;
+         }
+        
+         @media (max-width: 930px) {
+             width: 35rem;
+         }
+    
+         @media (max-width: 770px) {
+            width: 24.1rem;
+         }
+    
+    }
+}
+
+
+
+
+//Sektion Bio und Fair//
+
+.sec__bio {
+    padding-top: 10rem;
+    max-height: 64.6rem;
+    display: flex;
+    flex-direction: row-reverse;
+    
+     @media (max-width: 768px) {
+         flex-wrap: wrap;
+         padding-top: 4rem;
+    }
+
+     &--text {
+        width: 50.5vw;
+        padding: 7.5rem 20.5rem 0rem 12.2rem;
+    
+        @media (max-width: 1260px) {
+            padding : 5rem 10rem 0 12.2rem;
+        }
+    
+        @media (max-width: 1150px) {
+            width: 100%;
+            padding: 2.5rem 2.4rem;
+    
+            h2 {
+                line-height: 3.4rem;
+            }
+        }
+    }
+
+        &--p {
+             padding: 3.5rem 0 1.75rem 0 ;
+
+             @media (max-width: 768px) {
+             padding: 2rem 0 1rem 0;
+             line-height: 1.8rem;
+            }
+        }
+
+        &--bilder {
+            width: 61.2rem;
+            padding: 2rem 0 0 0;
+            margin-left: 10rem;
+        
+            @media (max-width: 768px) {
+                width: 100%;
+                padding: 0rem 11rem 12.5rem 2.4rem;
+                margin: 0;
+            }
+        
+            @media (max-width: 304px) {
+                padding-top: 7rem;
+            }
+        }
+
+        &--img {
+            width: 61.2rem;
+        
+             @media (max-width: 1130px) {
+                 width: 45rem;
+             }
+            
+             @media (max-width: 930px) {
+                 width: 35rem;
+             }
+        
+             @media (max-width: 770px) {
+                width: 24.1rem;
+             }
+        
+        }
+}
+        
+
+
+
+
+
+
