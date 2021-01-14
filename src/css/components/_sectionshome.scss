@@ -137,11 +137,12 @@
             width: 61.2rem;
             padding: 2rem 0 0 0;
             margin-left: 10rem;
+            margin-bottom: 12.5rem;
         
             @media (max-width: 768px) {
                 width: 100%;
-                padding: 0rem 11rem 12.5rem 2.4rem;
-                margin: 0;
+                padding: 0rem 11rem 0 2.4rem;
+                margin-bottom: 6rem;
             }
         
             @media (max-width: 304px) {
@@ -166,8 +167,125 @@
         
         }
 }
-        
 
+
+
+//Sektion Produktpräsentation//
+
+.sec-pro {
+    background-color: $farbe-anthrazit;
+    color: $farbe-weiss;
+
+    h2 {
+        margin-left: 9.74rem;
+        padding-top: 12.5rem;
+
+        @media (max-width: 768px) {
+            margin: 0;
+            padding: 6rem 2rem 4rem 2rem;
+            line-height: 1.1;
+        }
+    }
+
+    &--big-box {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0 9rem ;
+
+        @media (max-width: 600px) {
+            padding: 0 1.7rem;
+        }
+    }
+
+    &--box {
+        display: flex;
+        padding-top: 8rem;
+    }
+
+    &--asub {
+        color: $farbe-weiss;
+
+        @media (max-width: 768px) {
+            font-size: 1.8rem;
+            line-height: 2.19rem;
+        }
+    }
+
+    &__icon {
+        margin-right: 0.5rem;
+        }
+
+
+    &__p-preis {
+        color: $farbe-mittel-grau;
+        margin: 0.7rem 0;
+
+        @media (max-width: 768px) {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+    }
+}
+
+.sec-pro--costa ,
+.sec-pro--aeth {
+    padding: 0 0.74rem;
+}
+
+.sec-pro--costa-sub,
+.sec-pro--aeth-sub {
+    color: $farbe-weiss;
+    padding-top: 1.4rem;   
+}
+
+.sec-pro--costa-foto {
+    max-width: 30rem;
+    background-color: $farbe-weiss;
+
+    @media (max-width: 768px) {
+        max-width: 20rem;
+    }
+
+    @media (max-width: 600px) {
+        max-width: 15.5rem;
+    }
+
+    @media (max-width: 360px) {
+        max-width: 10rem;
+    }
+}
+
+
+
+//Sektion Herkunft// 
+
+.sec-herkunft {
+    height: 50vh;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+                      url(../images/FEND-Coffee-bags-2.jpg);
+    background-size: cover;            
+    background-position: center;
+    text-align: center;
+
+    &--text {
+        color: $farbe-weiss;
+        text-align: center;
+        padding-top: 14vh;
+
+        p {
+            margin: 3.34vh auto;
+            max-width: 30rem;
+
+            @media (max-width: 768px) {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                max-width: 24rem;
+                margin: 1.82vh auto 3vh auto;
+            }
+        }
+    }
+}
 
 
 

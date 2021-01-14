@@ -18,6 +18,21 @@
 }
 
 
+.link--mehr-weiss {
+  text-decoration: none;
+  color: $farbe-weiss;
+
+  &:hover {
+      text-decoration: underline;
+  }
+
+  &:active {
+      color: $farbe-kraftpapier;
+  }
+}
+
+
+
 
 
 //Button im Header//
@@ -58,4 +73,37 @@
 }
 
 
- 
+//Button Sektion Produktpräsentation// 
+
+.sec-pro__btn {
+    color: $farbe-weiss;
+    background-color: $farbe-anthrazit;
+    text-decoration: none;
+    width: 16.3rem;
+    height: 4.8rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    border-radius: 0.5rem;
+    border: $farbe-weiss solid 0.2rem;
+    text-align: center;
+    padding: 1.5rem 2rem;
+
+    &:hover {
+      background-color: $farbe-mittel-grau;
+      transform: translateY(-0.3rem);
+    }
+
+    &:active {
+        background-color: $farbe-kraftpapier;
+        transform: translateY(-0.1rem);
+    }
+
+    &:focus {                                               
+      transform: translateY(-0.3rem);
+    }         
+    
+    &-box {
+      padding: 9rem 0 14rem 0;
+      text-align: center;
+    }
+}

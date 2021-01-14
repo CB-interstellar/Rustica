@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rustica Startseite</title>
-    <link rel="icon" href="./images/Logo-schw.svg">
+    <link rel="icon" href="./icons/Logo-schw.svg">
     <link rel="stylesheet" href="css/main.scss" />
     <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
@@ -16,11 +16,11 @@
       <div class="header__menu">
 
         <div class="header__logo--box">
-          <img src="./images/Logo-weiß.svg" alt="Logo Rustica-Kaffebohne in Raute"  class="header__logo">
+          <img src="./icons/Logo-weiß.svg" alt="Logo Rustica-Kaffebohne in Raute"  class="header__logo">
         </div>
       
         <div class="burger--box">
-          <a href="./my-subpage/menu.html"><img  src="./images/burgermenu-w.svg" alt="Menu-Kreuz"></a>
+          <a href="./my-subpage/menu.html"><img  src="./icons/burgermenu-w.svg" alt="Menu-Kreuz"></a>
         </div>
 
         <nav class="navigation">
@@ -42,6 +42,8 @@
 
     <main>
 
+
+
       <section class="sec__roest">
         <div class="sec__roest--text">
           <h2>Rösterei & Café</h2>
@@ -61,6 +63,8 @@
         </div>
       </section>
 
+
+
       <section class="sec__bio">
         <div class="sec__bio--text">
             <h3>Bio und Fair</h3>
@@ -76,21 +80,49 @@
         
       </section>
 
-      <section class="produktpräsentation">
-        <a href="#" class="produkte">alle Produkte</a>
+
+
+      <section class="sec-pro">
+        <h2>Entdecke unsere <br>
+            Kaffee Sorten</h2>
+
+        <div class="sec-pro--big-box">
+
+          <include src="sec-pro--box.html"></include>
+          <include src="sec-pro--box.html"></include>
+
+        </div>  
+
+        <div class="sec-pro__btn-box">
+          <a href="#" class="sec-pro__btn">alle Produkte</a>
+        </div>
       </section>
 
-      <section class="herkunft">
-        <a href="#" class="link--mehr">mehr...</a>
+
+
+      <section class="sec-herkunft">
+        <div class="sec-herkunft--text">
+          <h3>Herkunft</h3>
+          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. 
+             Und das alles in bester Bio Qualität.</p>
+          <a href="#" class="link--mehr-weiss">mehr...</a>
+        </div>
       </section>
       
-      <section class="inhalt">
-        <div class="inhalt-bild"></div>
+
+
+      <section class="sec-inhalt">
+        <h2>Das steckt drin</h2>
+        <div class="sec-inhalt--box">
+          <img src="./images/FEND_Costa-Rica 2.png" class="sec-in--costa-foto" alt="Kaffe-Packung Costa Rica zum Verkauf">
+        </div>
         <div class="icons"></div>
       </section>
 
+
+
       <section class="karte">
-        <h1></h1>
+        <h2 >Komm vorbei</h2>
       </section>
 
     </main>
