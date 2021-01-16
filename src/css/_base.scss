@@ -1,4 +1,4 @@
-body {
+.under-construction {
   background: blue;
 
   @media (min-width: 768px) {
@@ -6,15 +6,18 @@ body {
   }
 }
 
-main {
-  div {
-    color: yellow;
-
-    @media (min-width: 768px) {
-      color: black;
+.under-construction {
+  main {
+    div {
+      color: yellow;
+  
+      @media (min-width: 768px) {
+        color: rgb(44, 116, 71);
+      }
     }
-  }
-} 
+  } 
+}
+
 
 
 //Eigenes Allgemeines CSS//

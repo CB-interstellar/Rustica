@@ -52,6 +52,10 @@
   box-sizing: border-box;
   text-decoration: none;
   margin-top: 47.246vh;
+
+      @media (max-height: 400px) {
+        margin-top: 20rem;
+      }
   
       &:hover {
         background-color: $farbe-mittel-grau;
@@ -106,4 +110,37 @@
       padding: 9rem 0 14rem 0;
       text-align: center;
     }
+}
+
+.btn--brown-free:link,
+.btn--brown-free:visited {
+  color: $farbe-weiss;
+  background-color: $farbe-anthrazit;
+  width: 16.3rem;
+  height: 4.8rem;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1.5rem 5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  
+      &:hover {
+        background-color: $farbe-mittel-grau;
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+      }
+
+      &:active {
+          background-color: $farbe-kraftpapier;
+          transform: translateY(-0.1rem);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
+      }
+
+      &:focus {                                               
+        border: $farbe-weiss solid 0.2rem ;
+        transform: translateY(-0.3rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+      }         
 }
