@@ -6,6 +6,7 @@
 
 .header__logo {
     height: 3.5rem;
+    position: fixed;
            
     &--box {
       padding: 1rem 0 0 7.153vw;
@@ -16,10 +17,14 @@
 .burger--box{
   position: absolute;
   top: 2.1rem;
-  right: 7.153vw;
+  right: 14.1vw;
+
+  a {
+    position: fixed;
+  }
 
   @media (min-width: 769px) {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -28,13 +33,13 @@
 .navigation {
 
     @media (max-width: 768px) {
-        visibility: hidden;
+        display: none;
     }
 
     float: inline-end;
     font-size: 1.8rem;
     line-height: 2.109rem;
-    position: absolute;
+    position: fixed;
     right: 7.153vw;
     top: 1.8rem;
      
@@ -46,7 +51,7 @@
     a {
       text-decoration: none;
       color: $farbe-weiss;
-      position: relative;
+      position: relative;c
 
       &.active {
         background-color: red;

@@ -1,5 +1,5 @@
 //Sektion Rösterei und Cafe//
-.sec__roest {
+.sec__roest-cafe {
     padding-top: 12.6rem;
     max-height: 64.6rem;
     display: flex;
@@ -415,6 +415,7 @@
         height: 46.2vh;
         width: 100%;
         border: $farbe-weiss solid 1px;
+        display: block;                        //verhindert komischen Rand//
      }
 }
 

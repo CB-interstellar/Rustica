@@ -1,0 +1,76 @@
+//Media Queries für Mobil-first// 
+
+@mixin phone {
+    @media (max-width: 576px) { @content; }
+}
+
+@mixin tablet-m {
+    @media (min-width: 768px) { @content; }
+}
+
+@mixin tablet-l {
+    @media (min-width: 992px) { @content; }
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) { @content; }
+}
+
+@mixin big-desktop {
+    @media (min-width: 1920px) { @content; }
+}
+
+
+
+//Nutzen wie folgt : 
+//
+
+//.header-title {  
+//    font-size: 2rem;  
+// 
+
+//    @include phone {                                               Nur sinnvoll, wenn sich die breakpoints ändern. // 
+//       font-size: 1rem;                                            Wäre durchgäniges Design für jede Größe nicht besser ? // 
+//    }
+// }
+
+
+
+
+//Weitere Variante : Media Query Manager//
+
+@mixin for($size) {
+
+    @if $size == phone {
+      @media (max-width: 576px) { @content; }
+    }
+
+    @else if $size == tablet-m {
+      @media (min-width: 768px) { @content; }
+    } 
+    
+    @else if $size == tablet-l {
+      @media (min-width: 992px) { @content; }
+    } 
+    
+    @else if $size == desktop {
+      @media (min-width: 1200px) { @content; }
+    } 
+    
+    @else if $size == big-desktop {
+      @media (min-width: 1920px) { @content; }
+    }
+}
+
+
+//Nutzen wie folgt : 
+//
+
+//.header-title {  
+//    font-size: 2rem;  
+// 
+
+//    @include for(phone) {                                Warum mehr schreiben als oben ???  //
+//       font-size: 1rem; 
+//    }
+// }
