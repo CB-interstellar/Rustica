@@ -317,16 +317,20 @@
         margin-top: 3.6rem;
         margin-left: 26rem;
 
-        @media (max-width: 1300px) {
-            margin-left: 13rem;
-        }
-
         @media (max-width: 1050px) {
             margin-left: 0;
         }
 
         @media (max-width:768px) {
             display: block;
+        }
+
+        @media (max-width: 1300px) {
+            margin-left: 13rem;
+        }
+
+        @media (max-width: 1050px) {
+            margin-left: 0 !important;
         }
     }
 
@@ -416,6 +420,10 @@
         width: 100%;
         border: $farbe-weiss solid 1px;
         display: block;                        //verhindert komischen Rand//
+
+        @include phone {
+            height: 34.7vh;
+        }
      }
 }
 

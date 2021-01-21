@@ -81,7 +81,7 @@
 
 .sec-pro__btn {
     color: $farbe-weiss;
-    background-color: $farbe-anthrazit;
+    background : none;
     text-decoration: none;
     width: 16.3rem;
     height: 4.8rem;
@@ -91,9 +91,11 @@
     border: $farbe-weiss solid 0.2rem;
     text-align: center;
     padding: 1.5rem 2rem;
+    position: relative;
+    z-index: 1;
+    transition: all 0.8s ease-in;
 
     &:hover {
-      background-color: $farbe-mittel-grau;
       transform: translateY(-0.3rem);
     }
 
@@ -106,6 +108,24 @@
       transform: translateY(-0.3rem);
     }         
     
+    &::after {
+      content: "";
+      background-color: $farbe-mittel-grau;
+      position: absolute;
+      display: inline-block;
+      height: 100%;                                     
+      width: 0;
+      border-radius: 0.5rem;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.8s ease-in;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
     &-box {
       padding: 9rem 0 14rem 0;
       text-align: center;

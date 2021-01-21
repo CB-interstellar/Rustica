@@ -15,9 +15,10 @@
     position: top;
     position: relative;
   
-      &--subpage {
+      &--cafe {
           height: 65vh;
-          background-image: url(../images/FEND-Coffee-shop.jpg);
+          background-image: linear-gradient(0deg, rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+                            url(../images/FEND-Coffee-shop.jpg);
           background-size: cover;
           background-position: center;
           position: top;
@@ -25,6 +26,20 @@
           @media (max-width: 768px) {
             height: 50vh;
           }
+        }
+
+        &--herkunft {
+            height: 65vh;
+            background-image: url(../images/Coffee-beans-hand-2.jpg);
+            background-size: cover;
+            background-position: center;
+            position: top;
+  
+            @media (max-width: 768px) {
+              height: 50vh;
+              background-image: linear-gradient(0deg, rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+                                url(../images/Coffee-beans-hand-2.jpg);
+            }
         }
   
       &--innen {

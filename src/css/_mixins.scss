@@ -1,4 +1,4 @@
-//Media Queries für Mobil-first// 
+//Media Queries für Mobil-first//                           in Gebrauch ab page 2 das Cafe
 
 @mixin phone {
     @media (max-width: 576px) { @content; }
@@ -37,7 +37,7 @@
 
 
 
-//Weitere Variante : Media Query Manager//
+//Weitere Variante : Media Query Manager//             bislang ungenutzt   !!!
 
 @mixin for($size) {
 
