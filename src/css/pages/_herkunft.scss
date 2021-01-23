@@ -1,0 +1,162 @@
+//Sektion Ursprung von Rustica
+
+.sec-ursprung {
+    margin: 6rem 2.4rem;
+
+    &--text {
+        margin-bottom: 5.6rem;
+
+        @include tablet-m {
+            margin-bottom: 12.6rem;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            width: 25rem;
+
+            @include tablet-m {
+                width: 61.2rem;
+                margin: 12.6rem auto 3.5rem auto;
+            }
+        }
+
+        p {
+            max-width: 61.2rem;
+            margin: 0 auto;
+        }
+    }
+
+    &--video {
+        margin: 0 auto;
+        max-width: 124.1rem;                    
+
+        &-content {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+//Sektion Anbaugebiete
+
+.sec-anbau {
+    margin: 6rem 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @include big-desktop {
+        margin: 6rem auto;
+        max-width: 144rem;
+    }
+
+    @include tablet-l {
+        flex-wrap: nowrap;
+    }
+
+    &--text {
+        margin-bottom: 5.6rem;
+
+        @include tablet-m {
+            margin-bottom: 0;
+            margin-left: 8rem;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+
+            @include tablet-m {
+                margin: 5.6rem auto 3.5rem auto;
+            }
+        }
+
+        p {
+            max-width: 40rem;
+            min-width: 33rem;
+
+            @include phone {
+                min-width: 23rem;
+            }
+        }
+    }
+
+    &--bild {
+        max-width: 24.1rem;
+        align-self: flex-end;
+
+        @include phone {
+            margin-left: 8.6rem;
+        }
+
+        @include tablet-l {
+            max-width: 71.7rem;
+            margin: 18.7rem 7.6rem 0 2rem;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+
+//Sektion Kaffebauern
+
+.sec-kaffebauern {
+    margin: 6rem 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet-m {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    &--text {
+        margin-bottom: 5.6rem;
+
+        @include tablet-m {
+            margin-bottom: 12.6rem;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            width: 25rem;
+
+            @include tablet-m {
+                width: 37rem;
+                margin: 6rem 0 3.5rem 0;
+            }
+        }
+
+        p {
+            max-width: 61.2rem;
+
+            @include tablet-m {
+                max-width: 40rem;
+            }
+        }
+    }
+
+    &--bild {
+        max-width: 24.1rem;
+        
+        @include tablet-m {
+            max-width: 50.8rem;
+            margin: 0rem 12rem 6.5rem 9rem;
+        }
+
+        @include desktop  {
+            margin-top: 18.5rem;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+ 

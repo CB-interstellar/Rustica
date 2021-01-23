@@ -91,6 +91,21 @@
         padding: 0 2.2rem;
     }
     
+    a {
+        text-decoration: none;
+        color: $farbe-weiss;
+
+        &:hover {
+            text-decoration: underline;
+            color: $farbe-mittel-grau;
+        }
+
+        &:active {
+            text-decoration: none;
+            color: $farbe-kraftpapier;
+        }
+    }
+
     &__heading {
         color: $farbe-weiss;
         padding-bottom: 8.2rem;
