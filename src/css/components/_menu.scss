@@ -1,4 +1,4 @@
-//Menu-Leiste wird später Scroll-fähig und ändert Farbe//
+//Menu-Leiste wird später Scroll-fähig und ändert Farbe - Wie ???//
 
 .header__menu {
     position: relative;
@@ -11,23 +11,7 @@
     &--box {
       padding: 1rem 0 0 7.153vw;
     }
-  }
-  
-
-.burger--box{
-  position: absolute;
-  top: 2.1rem;
-  right: 14.1vw;
-
-  a {
-    position: fixed;
-  }
-
-  @media (min-width: 769px) {
-    display: none;
-  }
 }
-
 
 
 .navigation {
@@ -51,11 +35,7 @@
     a {
       text-decoration: none;
       color: $farbe-weiss;
-      position: relative;c
-
-      &.active {
-        background-color: red;
-      }
+      position: relative;
   
       &::after {
         position: absolute;
@@ -84,27 +64,130 @@
   }
 
 
+//Burger-Menu
 
-//Subpage Menu//
-
-.x-box {
-    text-align: right;
-    padding-top: 1.9rem;
-    padding-right: 2.65rem;
-  }
-
-
-.body__menu {
-    background-color: $farbe-anthrazit;
-  }
+  .burger {
+    position: absolute;
+    
   
-.menu--box {
-    margin-top: 19.2rem;
-  }
-  
-.menu--mobil {
-    color: $farbe-weiss;
-    text-decoration: none;
-    display: inline-block;
-    padding: 3.2rem 4rem 3.2rem 6rem;
-  }
+    @media (min-width: 769px) {
+      display: none;
+    }
+
+    &__label {
+      background-color: transparent;              
+      height: 2.35rem;
+      width: 2.35rem;
+      position: fixed;
+      top: 1.9rem;
+      right: 7.153vw;
+      z-index: 200;                                     
+      text-align: center;                               
+      cursor: pointer;
+    }
+
+    &__checkbox {
+      display: none;
+    }
+
+    &__nav {
+      height: 100vh;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 150;
+      background-color: $farbe-schwarz;
+      opacity: 0;                                                              
+      transition: all 0.8s;
+    }
+
+    ul {
+      list-style: none;
+      width: 100vw; 
+      margin-top: 37.8vh;
+      margin-left: 6rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    a {
+      color: $farbe-weiss;
+      text-decoration: none;
+      display: none;
+
+        &:hover,
+        &:active {
+            text-decoration: underline;
+        }
+    }
+
+    h3 {
+      padding-bottom: 2.4rem;
+    }
+
+
+    &__checkbox:checked ~ &__background {
+      transform: scale(80);           
+    }
+
+    &__checkbox:checked ~ &__nav {
+      opacity: 1;
+      width: 100%;
+    }
+
+    &__checkbox:checked ~ &__nav a {
+      display: inline;
+    }
+
+
+    &__icon {
+        position: relative;
+        margin-top: 1rem;
+
+        &,
+        &::before,
+        &::after {
+            width: 2.35rem;
+            height: 2px;
+            background-color: $farbe-weiss;
+            display: inline-block;
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all 0.2s;
+        }
+
+        &::before {
+            top: -0.8rem;
+        }
+
+        &::after {
+            top: 0.8rem;
+        }
+    }
+
+    &__checkbox:checked + &__label &__icon {
+        background-color: transparent;             
+    }
+
+    &__checkbox:checked + &__label &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__label &__icon::after {
+        top: 0;
+        transform: rotate(45deg);
+    }
+}
+
+
+
+
+
