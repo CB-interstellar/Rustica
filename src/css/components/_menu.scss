@@ -13,7 +13,6 @@
     }
 }
 
-
 .navigation {
 
     @media (max-width: 768px) {
@@ -61,6 +60,15 @@
   
 .herkunft {
     margin: 4.75vw;
+  }
+
+
+  .header--impressum a {                            //später ändern, wenn farbe rest klappt
+    color: $farbe-schwarz;
+  
+    &::after {
+        background-color: $farbe-schwarz;
+    }
   }
 
 
