@@ -19,7 +19,11 @@
       <div class="header__menu">
 
         <div class="header__logo--box">
-          <a href="index.html" ><img src="./icons/Logo-weiß.svg" alt="Homepage von Rustica - Logo Kaffebohne in Raute"  class="header__logo"></a>
+          <a href="index.html">
+            <svg class="header__logo" alt="Homepage von Rustica - Logo Kaffebohne in Raute">
+              <use xlink:href="icons/sprite-ru.svg#icon-logo"></use>
+            </svg>
+          </a>
         </div>
            
         <div class="burger">
@@ -119,7 +123,7 @@
           <h3>Herkunft</h3>
           <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. 
              Und das alles in bester Bio Qualität.</p>
-          <a href="#" class="link--mehr-weiss">mehr...</a>
+          <a href="./my-subpage/herkunft.html" class="link--mehr-weiss">mehr...</a>
         </div>
       </section>
       
@@ -131,16 +135,33 @@
         <div class="sec-inhalt--box">
           <img src="./images/FEND_Costa-Rica 2.png" class="sec-in--costa-foto" alt="Kaffe-Packung Costa Rica zum Verkauf">
 
-          <div class="sec-inhalt--icons">
-            <img src="./icons/KleineTasse-schw.svg" alt="Icon Kleine Kaffetasse mit Duftwolke">
+          <div class="sec-inhalt__icons">
+            <!--<img src="./icons/KleineTasse-schw.svg" alt="Icon Kleine Kaffetasse mit Duftwolke">
             <img src="./icons/Schaufel-schw.svg" alt="Icon Schaufel = geröstet">
-            <img src="./icons/Kaffee Pflanze.svg" alt="Icon Kaffebohnen am Strauch">
-            <p>Bester <br>
-               Geschmack</p>
-            <p>Fair <br>
-               gehandelt</p>
-            <p>Bio <br>
-               Qualität</p>
+            <img src="./icons/Kaffee Pflanze.svg" alt="Icon Kaffebohnen am Strauch">-->
+
+            <div class="sec-inhalt__icons--content">
+
+              <svg alt="Icon Kleine Kaffetasse mit Duftwolke">
+                <use xlink:href="icons/sprite-ru.svg#icon-kl-tasse"></use>
+              </svg>
+              <svg alt="Icon Schaufel = geröstet">
+                <use xlink:href="icons/sprite-ru.svg#icon-schwarzeschaufel"></use>
+              </svg>
+              <svg>
+                <use xlink:href="icons/sprite-ru.svg#icon-kaffeepflanze"></use>
+              </svg>
+            </div>
+            
+            <div class="sec-inhalt__icons--text">
+              <p>Bester <br>
+                Geschmack</p>
+             <p>Fair <br>
+                gehandelt</p>
+             <p>Bio <br>
+                Qualität</p>
+            </div>
+
           </div>
 
         </div>  
@@ -167,8 +188,12 @@
     <footer class="footer">
 
       <!--<include src="footer.html"></include>   Nicht mehr möglich durch andere Links mit Subpages !-->
-
-      <a href="index.html"><img src="./icons/Group-Logo-weiss-gross.svg" alt="Homepage von Rustica - Logo Kaffebohne in Raute"  class="footer__logo"></a>
+      
+      <a href="index.html">
+        <svg class="footer__logo" alt="Homepage von Rustica - Logo Kaffebohne in Raute">
+            <use xlink:href="./icons/sprite-ru.svg#icon-logo"></use>
+        </svg>
+      </a>
 
       <div class="footer__heading">
         <h3>Rustica</h3>

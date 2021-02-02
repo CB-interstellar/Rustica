@@ -214,6 +214,8 @@
 
     &__icon {
         margin-right: 0.5rem;
+        width: 2rem;
+        height: 2rem;
         }
 
 
@@ -334,50 +336,52 @@
         }
     }
 
-    &--icons {
-        max-height: 60rem;
-        padding-left: 17rem;
-        padding-bottom: 5rem;
-        text-align: left;
+    &__icons {
+        margin: 4.2rem 2rem 7rem 2rem;
+        max-height: 38rem;
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-    
-        @media (max-width: 768px) {
-            text-align: center;
-            flex-direction: row;
-            padding-left: 0;
-            padding-bottom: 7rem;
-            max-width: 37.5rem;
-            min-width: 31rem;
-            margin: 0 auto;
+
+        @include tablet-m {
+            flex-wrap: nowrap;
+            padding-left: 18rem;
+        }
+
+        &--content {
+            width: 100%;
+            margin: 0 2rem 2.42rem 2rem;
+            display: flex;
             justify-content: space-between;
-        }
 
-        @media (max-width: 300px) {
-            flex-direction: column; 
-            max-height: 31rem;
-            justify-content: space-evenly;
-            min-width: 20rem;
-        }
-    
-        img {
-            max-width: 5.5rem;
-            margin: 6.25rem 2rem;
-            padding-top: 0;
+            @include tablet-m {
+                flex-direction: column;
+                margin: 0;
+            }
 
-            @media (max-width: 768px) {
-                margin: 0 2rem 0 3.5rem;
-                padding-top: 3rem;
+            svg {
+                width: 5rem;
+                height: 5rem;
             }
         }
-    
-        p {
-            margin: 7.25rem 2rem 5.25rem 2rem;
 
-            @media (max-width: 768px) {
-                margin: 0 2rem;
-                padding-top: 2.5rem;
+        &--text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            @include tablet-m {
+                flex-direction: column;
+                padding: 0.5rem 2rem;
+                text-align: left;
+            }
+
+            p {
+                flex-basis: 8.7rem;
+
+                @include tablet-m {
+                    width: 9.9rem;
+                    flex: 0;
+                }
             }
         }
     }

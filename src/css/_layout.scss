@@ -7,13 +7,13 @@
 
       @media (max-width: 768px) {
         height: 75vh;
-      }          
+      }  
+
     background-image: linear-gradient(0deg, rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
                       url(../images/FEND-Coffee-latte-art-3.jpg);                           
     background-size: cover;            
     background-position: center;
     position: top;
-    position: relative;
   
       &--cafe {
           height: 65vh;
@@ -48,11 +48,10 @@
         flex-direction: column;
         align-items: center;
         justify-content:center;
-        position: relative;
-        margin: 20.235vh 0 0 0;
+        padding: 20.235vh 0 0 0;
 
         @media (max-width: 768px){
-          margin: 22.94vh 0 0 0;
+          padding: 22.94vh 0 0 0;
         }
       }
   
@@ -72,13 +71,17 @@
 
 
 .footer__logo {
-    padding: 12.5rem 0 0 1.19rem;
+    padding: 0;
+    margin-left: 0.4rem;
+    margin-top: 6rem;
+    fill:$farbe-weiss;
+    width: 3.5rem;
+    height: 3.5rem;
 
-    @media (max-width: 768px) {
-        width: 3.5rem;
-        padding: 0;
-        margin-left: 0.4rem;
-        margin-top: 6rem;
+    @include tablet-m {
+        width: 7rem;
+        height: 7rem;
+        margin-top: 12.5rem;
     }
 }
 
@@ -86,6 +89,7 @@
 .footer {
     background-color: black;
     padding-left: 10rem;
+    overflow: hidden;
 
     @media (max-width: 815px) {
         padding: 0 2.2rem;
@@ -163,6 +167,7 @@
             
             @include desktop {
                 padding-top: 1rem;
+                flex-basis: 33.33%;
             }
         }
 
@@ -170,7 +175,13 @@
 
             @include desktop {
                 order: 2;
-                flex-basis: 100%;
+                flex-basis: 50%;
+            }
+        }
+
+        &-cafe {
+            @include desktop {
+                flex-basis: 33.33%;
             }
         }
 
@@ -179,8 +190,10 @@
             @include desktop {
                 order: 1;
                 padding-top: 1rem;
+                flex-basis: 33.33%;
             }
         }
     }       
+
 
 

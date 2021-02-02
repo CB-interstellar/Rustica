@@ -1,37 +1,42 @@
-//Menu-Leiste wird später Scroll-fähig und ändert Farbe - Wie ???//
+//Menu-Leiste wird später Scroll-fähig und ändert dabei Farbe - Wie ???//
 
 .header__menu {
-    position: relative;
+    height: 5.5rem;
+    width: 100%;
+    background-color: transparent;              //soll später weiß !
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7.153vw;
+    position: fixed;                
+    top: 0;
+    left: 0;
 }
 
 .header__logo {
     height: 3.5rem;
-    position: fixed;
-           
-    &--box {
-      padding: 1rem 0 0 7.153vw;
-    }
+    width: 3.5rem;
+    fill: $farbe-weiss;                          //soll später schwarz ! siehe Impressum
 }
-
+           
 .navigation {
-
-    @media (max-width: 768px) {
-        display: none;
-    }
-
-    float: inline-end;
     font-size: 1.8rem;
     line-height: 2.109rem;
-    position: fixed;
-    right: 7.153vw;
-    top: 1.8rem;
+
+    @media (max-width: 768px) {
+      display: none;
+  }
      
     li {
       list-style-type: none;                  
-      display: inline-block;  
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 4.75vw;
+      }
     }
   
-    a {
+    a {                                        
       text-decoration: none;
       color: $farbe-weiss;
       position: relative;
@@ -58,18 +63,23 @@
     }
   }
   
-.herkunft {
-    margin: 4.75vw;
-  }
 
 
-  .header--impressum a {                            //später ändern, wenn farbe rest klappt
-    color: $farbe-schwarz;
-  
-    &::after {
-        background-color: $farbe-schwarz;
-    }
-  }
+//später ändern, wenn rest klappt
+.header--impressum {
+
+        a {                            
+            color: $farbe-schwarz;
+               
+            &::after {
+              background-color: $farbe-schwarz;
+            }
+        }
+
+        svg {
+          fill: $farbe-schwarz;
+        }
+}
 
 
 //Burger-Menu
