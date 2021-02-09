@@ -18,6 +18,10 @@
     width: 3.5rem;
     fill: $farbe-weiss;                          //soll später schwarz ! siehe Impressum
 }
+
+.header__logo--box {
+  display: flex;
+}
            
 .navigation {
     font-size: 1.8rem;
@@ -66,7 +70,8 @@
 
 
 //später ändern, wenn rest klappt
-.header--impressum {
+.header--impressum,
+.header--kontakt {
 
         a {                            
             color: $farbe-schwarz;
@@ -86,7 +91,6 @@
 
   .burger {
     position: absolute;
-    
   
     @media (min-width: 769px) {
       display: none;

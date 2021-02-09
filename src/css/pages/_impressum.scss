@@ -1,9 +1,4 @@
 
-//Wie färbe ich das SVG-Logo ?
-
-//Wie schreibe ich eine Attribution ?
-
-
 .impressum {
     margin: 13.3rem auto 10rem auto;
     padding: 0 2.4rem;
@@ -34,6 +29,10 @@
         @include tablet-m {
             padding: 2rem 0 5rem 0;
         }
+    }
+
+    &__source {
+        margin-top: 3rem !important;
     }
 
     ul {

@@ -88,12 +88,8 @@
 
 .footer {
     background-color: black;
-    padding-left: 10rem;
+    padding-left: 7.153vw;
     overflow: hidden;
-
-    @media (max-width: 815px) {
-        padding: 0 2.2rem;
-    }
 
     @include desktop {
         max-height: 45rem;
@@ -189,7 +185,6 @@
 
             @include desktop {
                 order: 1;
-                padding-top: 1rem;
                 flex-basis: 33.33%;
             }
         }

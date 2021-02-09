@@ -48,13 +48,12 @@
   border-radius: 0.5rem;
   border: none;
   padding: 1.5rem 4rem;
-  position:absolute;
   box-sizing: border-box;
   text-decoration: none;
-  margin-top: 47.246vh;
+  margin-top: 16.5vh;
 
-      @media (max-height: 400px) {
-        margin-top: 20rem;
+      @include desktop {
+        margin-top: 18vh;
       }
   
       &:hover {
