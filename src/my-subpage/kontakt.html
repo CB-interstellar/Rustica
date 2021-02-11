@@ -21,15 +21,61 @@
     </header>
 
     <main>
+      <div class="sec-kontakt">
 
-      <section class="sec-kontakt__heading">
-        <h2>Du hast Fragen? <br>
-        Schreib uns gern!</h2>
-      </section>
+            <section class="sec-kontakt__heading">
+                <h2>Du hast Fragen? <br>
+                Schreib uns gern!</h2>
+          </section>
 
-      <section class="sec-daten"></section>
+          <section class="sec-kontakt--userdaten">
 
-      <section class="sec-betreff"></section>
+          <form method="post" action="mailto:neuwalt@gmx.de" enctype="text/plain"
+                class="sec-kontakt--abschicken">
+
+            <div class="sec-kontakt__form">
+              <label for="name" class="sec-kontakt__label">Name*</label><br>
+              <input type="text" class="sec-kontakt__input" id="name" placeholder="Name" required>  
+            </div>
+
+            <div class="sec-kontakt__form">
+              <label for="email" class="sec-kontakt__label">E-Mail*</label><br>
+              <input type="email" class="sec-kontakt__input" id="email" placeholder="E-Mail" required>  
+            </div>
+
+            <div class="sec-kontakt__form">
+              <label for="telefon" class="sec-kontakt__label">Telefonnummer</label><br>
+              <input type="tel" class="sec-kontakt__input" id="telefon" placeholder="Telefonnummer" required>
+            </div>
+
+            <div class="sec-kontakt__form--betreff">
+              <label for="betreff" class="sec-kontakt__label sec-kontakt__btn sec-kontakt__btn--betreff">Dein Betreff</label>
+              <select name="betreff" id="betreff" class="sec-kontakt--betreff" required>
+                <option value="lieferung">Fragen zur Lieferung</option>
+                <option value="produkt">Fragen zum Produkt</option>
+                <option value="vertrieb">Vertriebsfragen</option>
+                <option value="einfach">einfach nur so!</option>
+              </select>
+            </div>
+
+            <div class="sec-kontakt__form--nachricht">
+              <label for="deinText" class="sec-kontakt__label">Deine Nachricht</label><br>
+              <textarea maxlength="300" placeholder="Was hast du auf dem Herzen?" 
+                        class="sec-kontakt__input sec-kontakt__input--textfeld" id="deinText">
+              </textarea>
+            </div>
+
+            <div class="sec-kontakt--daten">
+              <input type="checkbox" class="sec-kontakt__checkbox" id="check" required>
+              <label for="check" class="sec-kontakt__label">Ich akzeptiere die Datenschutzerklärung</label>
+            </div>
+
+            <input type="submit" value="abschicken" class="sec-kontakt__btn sec-kontakt__btn--abschicken">
+          </form>
+
+          </section>
+
+      </div>
 
     </main>
   

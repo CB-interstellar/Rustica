@@ -1,10 +1,122 @@
-.sec-kontakt__heading {
+.sec-kontakt {
     margin: 13.3rem 7.153vw 0 7.153vw;
 
-    @include tablet-m {
-        margin: 22.9rem 22.48vw 0 7.153vw;
+        @include tablet-m {
+            margin: 22.9rem 20.5rem 12.5rem 7.153vw;
+            display: flex;
+        }
+    
+    &__heading {
+        @include tablet-m {
+            width: 42vw;
+            padding-right: 3rem;
+        }
+    }
+
+    &--abschicken {
+        width: 100%;
+    }
+
+    &--userdaten {
+        margin-top: 3.4rem;
+        display: flex;
+
+        @include tablet-m {
+            margin-top: 4rem;
+            width: 35vw;
+        }
+    }
+
+    &__form--nachricht {
+        @include tablet-m {
+            margin-top: 4.2rem;
+        }
+    }
+
+    &__input {
+        height: 4rem;
+        width: 100%;
+        margin: 0.5rem 0 4rem 0;
+        padding-left: 2rem;
+        border: none;
+        border-bottom: $farbe-schwarz solid 3px;
+
+        @include tablet-m {
+            margin: 1.7rem 0 8.7rem 0;
+            font-size: 18px;
+        }
+
+        &--textfeld {
+            height: 11.5rem;
+            margin-top: 5rem !important;
+            font-family:'Roboto', Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &:focus {
+            background-color: $farbe-leicht-grau;
+            color: $farbe-schwarz;
+        }
+
+        &:invalid {
+            box-shadow: none;
+            background-color: rgba($farbe-eigen, 0.3);
+            color: $farbe-eigen;
+        }
+    }
+
+    &--betreff {                     // das "select" versteckt hinter button Dein Betreff !!!
+        position: relative;
+        width: 100%;
+        height: 4rem;
+        bottom: 4.5rem;
+    }     
+
+    &__btn {
+        color: $farbe-weiss;
+        background-color: $farbe-schwarz;
+        height: 5rem;
+        border-radius: 5px;
+
+        &--betreff {                             // wie soll focus usw. ? doch eher schwarz bleiben ...
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            padding: 1.7rem 2.5rem;
+        }
+
+        &--abschicken {
+            margin: 4.2rem auto;
+            display: block;
+            padding: 1.4rem 5rem;
+            border: none;
+
+            @include tablet-m {
+                font-size: 18px;
+            }
+
+            &:hover {
+                background-color: $farbe-mittel-grau;
+                transform: translateY(-0.3rem);
+                box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+              }
+        
+              &:active {
+                  background-color: $farbe-kraftpapier;
+                  transform: translateY(-0.1rem);
+                  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
+              }
+        
+              &:focus {                                               
+                border: $farbe-weiss solid 0.2rem ;
+                transform: translateY(-0.3rem);
+                box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+              }         
+        }
     }
 }
-.sec-daten {}
 
-.sec-betreff {}
+
