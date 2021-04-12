@@ -1,92 +1,108 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Website von Rusttica - Café und Rösterei">
-    <meta name="keywords" content="Kaffee, Rösterei, Café, bio, fair">
-    <meta name="author" content="Cornelia Braun">
-    <title>Kontakt</title>
-    <link rel="icon" href="../icons/Logo-schw.svg">
-    <link rel="stylesheet" href="../css/main.scss" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-  </head>
 
-  <body class="under-construction">     <!--diese Seite ist noch im Entstehen-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website von Rusttica - Café und Rösterei">
+  <meta name="keywords" content="Kaffee, Rösterei, Café, bio, fair">
+  <meta name="author" content="Cornelia Braun">
+  <title>Kontakt</title>
+  <link rel="icon" href="../icons/Logo-schw.svg">
+  <link rel="stylesheet" href="../css/main.scss" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
 
-    <header class="header--kontakt">
-      
-        <include src="menu-subpage.html"></include>
-        
-    </header>
+<!--<body class="under-construction">     diese Seite ist noch im Entstehen-->
 
-    <main>
-      <div class="sec-kontakt">
+<body>
+  <header class="header--kontakt">
 
-            <section class="sec-kontakt__heading">
-                <h2>Du hast Fragen? <br>
-                Schreib uns gern!</h2>
-          </section>
+    <include src="menu-subpage.html"></include>
 
-          <section class="sec-kontakt--userdaten">
+  </header>
 
-          <form method="post" action="mailto:neuwalt@gmx.de" enctype="text/plain"
-                class="sec-kontakt--abschicken">
+  <main>
+    <div class="sec-kontakt">
 
-            <div class="sec-kontakt__form">
-              <label for="name" class="sec-kontakt__label">Name*</label><br>
-              <input type="text" class="sec-kontakt__input" id="name" placeholder="Name" required>  
-            </div>
+      <section class="sec-kontakt__heading">
+        <h2>Du hast Fragen? <br>
+          Schreib uns gern!</h2>
+      </section>
 
-            <div class="sec-kontakt__form">
-              <label for="email" class="sec-kontakt__label">E-Mail*</label><br>
-              <input type="email" class="sec-kontakt__input" id="email" placeholder="E-Mail" required>  
-            </div>
+      <section class="sec-kontakt--userdaten">
 
-            <div class="sec-kontakt__form">
-              <label for="telefon" class="sec-kontakt__label">Telefonnummer</label><br>
-              <input type="tel" class="sec-kontakt__input" id="telefon" placeholder="Telefonnummer" required>
-            </div>
+        <form method="post" enctype="text/plain" class="sec-kontakt--abschicken">
 
-            <div class="sec-kontakt__form--betreff">
-              <label for="betreff" class="sec-kontakt__label sec-kontakt__btn sec-kontakt__btn--betreff">Dein Betreff</label>
-              <select name="betreff" id="betreff" class="sec-kontakt--betreff" required>
-                <option value="lieferung">Fragen zur Lieferung</option>
-                <option value="produkt">Fragen zum Produkt</option>
-                <option value="vertrieb">Vertriebsfragen</option>
-                <option value="einfach">einfach nur so!</option>
-              </select>
-            </div>
+          <div class="sec-kontakt__form">
+            <label for="name" class="sec-kontakt__label">Name*</label><br>
+            <input type="text" class="sec-kontakt__input" id="name" placeholder="Name">
+          </div>
 
-            <div class="sec-kontakt__form--nachricht">
-              <label for="deinText" class="sec-kontakt__label">Deine Nachricht</label><br>
-              <textarea maxlength="300" placeholder="Was hast du auf dem Herzen?" 
-                        class="sec-kontakt__input sec-kontakt__input--textfeld" id="deinText">
-              </textarea>
-            </div>
+          <div class="sec-kontakt__form">
+            <label for="email" class="sec-kontakt__label">E-Mail*</label><br>
+            <input type="email" class="sec-kontakt__input" id="email" placeholder="E-Mail">
+          </div>
 
-            <div class="sec-kontakt--daten">
-              <input type="checkbox" class="sec-kontakt__checkbox" id="check" required>
-              <label for="check" class="sec-kontakt__label">Ich akzeptiere die Datenschutzerklärung</label>
-            </div>
+          <div class="sec-kontakt__form">
+            <label for="telefon" class="sec-kontakt__label">Telefonnummer</label><br>
+            <input type="tel" class="sec-kontakt__input" id="telefon" placeholder="Telefonnummer">
+          </div>
 
-            <input type="submit" value="abschicken" class="sec-kontakt__btn sec-kontakt__btn--abschicken">
-          </form>
 
-          </section>
+          <div class="sec-kontakt__form--betreff">
+            <ul class="dropdown">
+              <li id="dropdown__label__id" class="dropdown__label"></li>
+              <li id="dropdown-betreff" class="dropdown--betreff" role="button" aria-labelledby="dropdown-label"
+                tabindex="0">
+                Dein Betreff</li>
+              <svg class="dropdown__icon" alt="Pfeil zum Öffnen des Drop-down Menüs">
+                <title>Öffnet das Drop-down Menü</title>
+                <use xlink:href="../icons/sprite-ru.svg#icon-drop-down"></use>
+              </svg>
+              <li class="dropdown--list-container" aria-expanded="false" role="list">
+                <ul class="dropdown--list">
+                  <li class="dropdown--lieferung dropdown__list-item" tabindex="0" id="option-1">Fragen zur Lieferung
+                  </li>
+                  <li class="dropdown--produkt dropdown__list-item" tabindex="0" id="option-2">Fragen zum Produkt</li>
+                  <li class="dropdown--vertrieb dropdown__list-item" tabindex="0" id="option-3">Vertriebsfragen</li>
+                  <li class="dropdown--einfach dropdown__list-item" tabindex="0" id="option-4">einfach nur so!</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
 
-      </div>
 
-    </main>
-  
-    <footer class="footer">
-  
-        <include src="footer.html"></include>
-  
-    </footer>  
-        
-      <script src="../js/index.js"></script>
+          <div class="sec-kontakt__form--nachricht">
+            <label for="deinText" class="sec-kontakt__label">Deine Nachricht</label><br>
+            <textarea maxlength="500" placeholder="Was hast du auf dem Herzen?"
+              class="sec-kontakt__input sec-kontakt__input--textfeld" id="deinText">
+            </textarea>
+          </div>
 
-  </body>
+          <div class="sec-kontakt--daten">
+            <input type="checkbox" class="sec-kontakt__checkbox" id="check" required>
+            <label for="check" class="sec-kontakt__label--daten">&nbsp;Ich akzeptiere die Datenschutzerklärung</label>
+          </div>
+
+          <input type="submit" id="abschicken" value="abschicken" class="sec-kontakt__btn sec-kontakt__btn--abschicken">
+        </form>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+
+    <include src="footer.html"></include>
+
+  </footer>
+
+  <script src="../js/index.js"></script>
+  <script src="../js/kontakt.js"></script>
+
+</body>
+
 </html>
-

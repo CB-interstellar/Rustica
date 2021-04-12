@@ -95,6 +95,17 @@
 <path d="M33.03 10.27C33.03 10.27 35.65 -0.779985 14.41 1.97001C14.41 1.97001 23.44 14.69 33.68 10.71" stroke="#3A3734" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
+<symbol id="icon-burger-schw" width="24" height="16" viewBox="0 0 24 16" fill="none">
+<path d="M0 2H23.5M0 8H23.5M0 14.5H16.5" stroke="white" stroke-width="3"/>
+</symbol>
+
+<symbol id="icon-burgermenu" viewBox="0 0 20 20">
+<path d="M16.4 9h-12.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h12.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM16.4 13h-12.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1h12.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1zM3.6 7h12.8c0.552 0 0.6-0.447 0.6-1s-0.048-1-0.6-1h-12.8c-0.552 0-0.6 0.447-0.6 1s0.048 1 0.6 1z"></path>
+</symbol>
+
+<symbol id="icon-drop-down" viewBox="0 0 20 20">
+<path d="M17.418 6.109c0.272-0.268 0.709-0.268 0.979 0s0.271 0.701 0 0.969l-7.908 7.83c-0.27 0.268-0.707 0.268-0.979 0l-7.908-7.83c-0.27-0.268-0.27-0.701 0-0.969s0.709-0.268 0.979 0l7.419 7.141 7.418-7.141z"></path>
+</symbol>
 
 </defs>
 </svg>

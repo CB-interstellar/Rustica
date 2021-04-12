@@ -1,0 +1,13 @@
+// Sektion Kaffee Sorten
+
+.sec-kaffeesorten {
+    margin: 0 7.153vw;
+
+    h2 {
+        margin: 10.2rem 0 4rem 0;
+
+        @include tablet-m {
+            margin: 27.2rem 0 8rem 0;
+        }
+    }
+}

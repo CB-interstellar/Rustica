@@ -38,4 +38,8 @@ body {
   box-sizing: border-box;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 

@@ -1,239 +1,254 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Website von Rusttica - Café und Rösterei">
-    <meta name="keywords" content="Kaffee, Rösterei, Café, bio, fair">
-    <meta name="author" content="Cornelia Braun">
-    <title>Rustica Startseite</title>
-    <link rel="icon" href="./icons/Logo-schw.svg">
-    <link rel="stylesheet" href="css/main.scss" />
-    <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website von Rusttica - Café und Rösterei">
+  <meta name="keywords" content="Kaffee, Rösterei, Café, bio, fair">
+  <meta name="author" content="Cornelia Braun">
+  <title>Rustica Startseite</title>
+  <link rel="icon" href="./icons/Logo-schw.svg">
+  <link rel="stylesheet" href="css/main.scss" />
+  <link href="https://fonts.googleapis.com/css?family=Oregano" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+</head>
 
-    <header class="header">
-      <div class="header__menu">
+<body>
 
-        <div class="header__logo--box">
-          <a href="index.html">
-            <svg class="header__logo" alt="Homepage von Rustica - Logo Kaffebohne in Raute">
-              <use xlink:href="icons/sprite-ru.svg#icon-logo"></use>
-            </svg>
-          </a>
-        </div>
-           
-        <div class="burger">
-          <input type="checkbox" class="burger__checkbox" id="navi-toggle">
-          <label for="navi-toggle" class="burger__label">
-              <span class="burger__icon">&nbsp;</span>
-          </label>
+  <header class="header--home">
+    <div class="header__menu">
 
-          <nav class="burger__nav">
-              <ul>
-                  <li><a href="./my-subpage/cafe.html"><h3>das Café</h3></a></li>
-                  <li><a href="./my-subpage/herkunft.html"><h3>Herkunft</h3></a></li>
-                  <li><a href="./my-subpage/shop.html"><h3>Shop</h3></a></li>
-                  <li><a href="./my-subpage/kontakt.html"><h3>Kontakt</h3></a></li>
-              </ul>
-          </nav>
-        </div>
+      <div class="header__logo--box">
+        <a href="index.html">
+          <svg class="header__logo" alt="Homepage von Rustica - Logo Kaffebohne in Raute">
+            <use xlink:href="icons/sprite-ru.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </div>
 
-        <nav class="navigation">
+      <div class="burger">
+        <button class="burger__btn">
+          <svg class="burger__icon" alt="Burger Logo zur Seitennavigation">
+            <use xlink:href="icons/sprite-ru.svg#icon-burgermenu"></use>
+          </svg>
+        </button>
+
+        <nav class="burger__nav">
+          <a href="index.html"><img class="link--x" src="icons/Burger X.svg" alt="X-Icon Rückkehr zur Homepage"></a>
           <ul>
-            <li><a href="./my-subpage/cafe.html" class="cafe">das Café</a></li>
-            <li><a href="./my-subpage/herkunft.html" class="herkunft">Herkunft</a></li>
-            <li><a href="./my-subpage/shop.html" class="shop">Shop</a></li>
-            <li><a href="./my-subpage/kontakt.html" class="kontakt">Kontakt</a></li>
+            <li><a href="./my-subpage/cafe.html">
+                <h3>das Café</h3>
+              </a></li>
+            <li><a href="./my-subpage/herkunft.html">
+                <h3>Herkunft</h3>
+              </a></li>
+            <li><a href="./my-subpage/shop.html">
+                <h3>Shop</h3>
+              </a></li>
+            <li><a href="./my-subpage/kontakt.html">
+                <h3>Kontakt</h3>
+              </a></li>
           </ul>
         </nav>
-        
       </div>
 
-      <div class="header--innen">
-        <h1>Rustica</h1>
-          <p class="header__h1-sub">Bio und Fair seit 1991</p>
-        
-          <a href="./my-subpage/shop.html" class="btn--brown">zum Shop</a>
+      <nav class="navigation">
+        <ul>
+          <li><a href="./my-subpage/cafe.html" class="cafe">das Café</a></li>
+          <li><a href="./my-subpage/herkunft.html" class="herkunft">Herkunft</a></li>
+          <li><a href="./my-subpage/shop.html" class="shop">Shop</a></li>
+          <li><a href="./my-subpage/kontakt.html" class="kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="header--innen">
+      <h1>Rustica</h1>
+      <p class="header__h1-sub">Bio und Fair seit 1991</p>
+
+      <a href="./my-subpage/shop.html" class="btn--brown">zum Shop</a>
+    </div>
+  </header>
+
+  <main>
+
+
+    <section class="sec__roest">
+      <div class="sec__roest--text">
+        <h2>Rösterei & Café</h2>
+        <p class="sec__roest--p">Kaffe aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im
+          gemütlichen Café in der Innenstadt.</p>
+
+        <div class="sec__roest--adresse">
+          <p>Komm uns besuchen ! <br>
+            Frauenhoferstr. 13, Kiel</p>
+        </div>
+        <div class="sec__roest--zeiten">
+          <p>Mo - Fr 8-18 Uhr<br>
+            Sa 11-18 Uhr</p>
+        </div>
       </div>
-    </header>
-
-    <main>
-
-
-      <section class="sec__roest">
-        <div class="sec__roest--text">
-          <h2>Rösterei & Café</h2>
-          <p class="sec__roest--p">Kaffe aus Kiel, direkt gehandelt und geröstet in der eigenen Rösterei, serviert im gemütlichen Café in der Innenstadt.</p>
-          
-          <div class="sec__roest--adresse">
-            <p>Komm uns besuchen ! <br>
-               Frauenhoferstr. 13, Kiel</p>
-          </div>
-          <div class="sec__roest--zeiten">
-            <p>Mo - Fr 8-18 Uhr<br>
-               Sa 11-18 Uhr</p>
-          </div>
-        </div>
-        <div class="sec__roest--bilder">
-            <img class="sec__roest--img" src="./images/FEND-Coffee-shop.jpg" alt="Cafe in der Innenstadt, besucht von vielen jungen Leuten">
-        </div>
-      </section>
+      <div class="sec__roest--bilder">
+        <img class="sec__roest--img" src="./images/FEND-Coffee-shop.jpg"
+          alt="Cafe in der Innenstadt, besucht von vielen jungen Leuten">
+      </div>
+    </section>
 
 
 
-      <section class="sec__bio">
-        <div class="sec__bio--text">
-            <h3>Bio und Fair</h3>
-            <p class="sec__bio--p">Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die 
-              Blindtexte.Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. 
-              Und das alles in bester Bio Qualität.</p>
-            <a href="./my-subpage/herkunft.html/#anbaugebiete" class="link--mehr">mehr ...</a>
-        </div>
-          <div class="sec__bio--bilder">
-              <img class="sec__bio--img" src="./images/FEND-coffee-plant.jpg" alt="Kaffeepflanze mit Früchten-Kaffebohnen">
-          </div>
-        </div>
-        
-      </section>
+    <section class="sec__bio">
+      <div class="sec__bio--text">
+        <h3>Bio und Fair</h3>
+        <p class="sec__bio--p">Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die
+          Blindtexte.Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.
+          Und das alles in bester Bio Qualität.</p>
+        <a href="./my-subpage/herkunft.html/#anbaugebiete" class="link--mehr">mehr ...</a>
+      </div>
+      <div class="sec__bio--bilder">
+        <img class="sec__bio--img" src="./images/FEND-coffee-plant.jpg" alt="Kaffeepflanze mit Früchten-Kaffebohnen">
+      </div>
+      </div>
+
+    </section>
 
 
 
-      <section class="sec-pro">
-        <h2>Entdecke unsere <br>
-            Kaffee Sorten</h2>
+    <section class="sec-pro">
+      <h2>Entdecke unsere <br>
+        Kaffee Sorten</h2>
 
-        <div class="sec-pro--big-box">
+      <div class="sec-pro--big-box">
 
-          <include src="sec-pro--box.html"></include>
-          <include src="sec-pro--box.html"></include>
+        <include src="sec-pro--box.html"></include>
+        <include src="sec-pro--box.html"></include>
 
-        </div>  
+      </div>
 
-        <div class="sec-pro__btn-box">
-          <a href="./my-subpage/shop.html/#produktübersicht" class="sec-pro__btn">alle Produkte</a>
-        </div>
-      </section>
-
-
-
-      <section class="sec-herkunft">
-        <div class="sec-herkunft--text">
-          <h3>Herkunft</h3>
-          <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. 
-             Und das alles in bester Bio Qualität.</p>
-          <a href="./my-subpage/herkunft.html" class="link--mehr-weiss">mehr...</a>
-        </div>
-      </section>
-      
+      <div class="sec-pro__btn-box">
+        <a href="./my-subpage/shop.html/#produktübersicht" class="sec-pro__btn">alle Produkte</a>
+      </div>
+    </section>
 
 
-      <section class="sec-inhalt">
-        <h2>Das steckt drin</h2>
 
-        <div class="sec-inhalt--box">
-          <img src="./images/FEND_Costa-Rica 2.png" class="sec-in--costa-foto" alt="Kaffe-Packung Costa Rica zum Verkauf">
+    <section class="sec-herkunft">
+      <div class="sec-herkunft--text">
+        <h3>Herkunft</h3>
+        <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.
+          Und das alles in bester Bio Qualität.</p>
+        <a href="./my-subpage/herkunft.html" class="link--mehr-weiss">mehr...</a>
+      </div>
+    </section>
 
-          <div class="sec-inhalt__icons">
-            <!--<img src="./icons/KleineTasse-schw.svg" alt="Icon Kleine Kaffetasse mit Duftwolke">
+
+
+    <section class="sec-inhalt">
+      <h2>Das steckt drin</h2>
+
+      <div class="sec-inhalt--box">
+        <img src="./images/FEND_Costa-Rica 2.png" class="sec-in--costa-foto" alt="Kaffe-Packung Costa Rica zum Verkauf">
+
+        <div class="sec-inhalt__icons">
+          <!--<img src="./icons/KleineTasse-schw.svg" alt="Icon Kleine Kaffetasse mit Duftwolke">
             <img src="./icons/Schaufel-schw.svg" alt="Icon Schaufel = geröstet">
             <img src="./icons/Kaffee Pflanze.svg" alt="Icon Kaffebohnen am Strauch">-->
 
-            <div class="sec-inhalt__icons--content">
+          <div class="sec-inhalt__icons--content">
 
-              <svg alt="Icon Kleine Kaffetasse mit Duftwolke">
-                <use xlink:href="icons/sprite-ru.svg#icon-kl-tasse"></use>
-              </svg>
-              <svg alt="Icon Schaufel = geröstet">
-                <use xlink:href="icons/sprite-ru.svg#icon-schwarzeschaufel"></use>
-              </svg>
-              <svg>
-                <use xlink:href="icons/sprite-ru.svg#icon-kaffeepflanze"></use>
-              </svg>
-            </div>
-            
-            <div class="sec-inhalt__icons--text">
-              <p>Bester <br>
-                Geschmack</p>
-             <p>Fair <br>
-                gehandelt</p>
-             <p>Bio <br>
-                Qualität</p>
-            </div>
-
+            <svg alt="Icon Kleine Kaffetasse mit Duftwolke">
+              <use xlink:href="icons/sprite-ru.svg#icon-kl-tasse"></use>
+            </svg>
+            <svg alt="Icon Schaufel = geröstet">
+              <use xlink:href="icons/sprite-ru.svg#icon-schwarzeschaufel"></use>
+            </svg>
+            <svg>
+              <use xlink:href="icons/sprite-ru.svg#icon-kaffeepflanze"></use>
+            </svg>
           </div>
 
-        </div>  
-
-          <div class="sec-inhalt__btn-box">
-            <a href="./my-subpage/shop.html" class="btn--brown-free">zum Shop</a>
+          <div class="sec-inhalt__icons--text">
+            <p>Bester <br>
+              Geschmack</p>
+            <p>Fair <br>
+              gehandelt</p>
+            <p>Bio <br>
+              Qualität</p>
           </div>
 
-      </section>
+        </div>
 
-
-      <section class="sec-karte">
-        <h2>Komm vorbei</h2>
-
-        <iframe title="Karte mit der Lage des Café"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=10.104053020477297%2C54.336244374763496%2C10.139887332916262%2C54.347289583290134&amp;layer=mapnik&amp;marker=54.341767349991564%2C10.121970176696777"></iframe>
-
-              <!--<small><a href="https://www.openstreetmap.org/?mlat=54.3418&amp;mlon=10.1220#map=16/54.3418/10.1220">Größere Karte anzeigen</a></small>-->
-      </section>
-      
-
-    </main>
-
-    <footer class="footer">
-
-      <!--<include src="footer.html"></include>   Nicht mehr möglich durch andere Links mit Subpages !-->
-      
-      <a href="index.html">
-        <svg class="footer__logo" alt="Homepage von Rustica - Logo Kaffebohne in Raute">
-            <use xlink:href="./icons/sprite-ru.svg#icon-logo"></use>
-        </svg>
-      </a>
-
-      <div class="footer__heading">
-        <h3>Rustica</h3>
-        <p>Café und Rösterei</p>
       </div>
-    
-    
-      <div class="footer--big-box">
-        
-        <div class="footer--box-ad footer--box">
-            <p>Komm uns besuchen ! <br>
-               Frauenhoferstr. 13, Kiel</p>
-        </div>
-    
-        <div class="footer--box-zeit footer--box">
-            <p>Mo - Fr 8-18 Uhr<br>
-               Sa 11-18 Uhr</p>
-        </div>
 
-        <div class="footer--box-imp footer--box">
-          <p>
-              <a href="./my-subpage/impressum.html">Impressum</a><br>
-              Datenschutz<br>
-              <a href="./my-subpage/kontakt.html">Kontakt</a></p>
-        </div>
-    
-        <div class="footer--box-cafe footer--box">
-            <p><a href="./my-subpage/cafe.html">Cafe</a><br>
-               <a href="./my-subpage/shop.html">Shop</a><br>
-               <a href="./my-subpage/herkunft.html">Herkunft</a>
-              </p>
-        </div>
-    
-      </div>    
+      <div class="sec-inhalt__btn-box">
+        <a href="./my-subpage/shop.html" class="btn--brown-free">zum Shop</a>
+      </div>
 
-    </footer>  
+    </section>
 
-    <script src="js/index.js"></script>       <!--Wozu ist das gut ?-->   
-  </body>
+
+    <section class="sec-karte">
+      <h2>Komm vorbei</h2>
+
+      <iframe title="Karte mit der Lage des Café"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=10.104053020477297%2C54.336244374763496%2C10.139887332916262%2C54.347289583290134&amp;layer=mapnik&amp;marker=54.341767349991564%2C10.121970176696777"></iframe>
+
+      <!--<small><a href="https://www.openstreetmap.org/?mlat=54.3418&amp;mlon=10.1220#map=16/54.3418/10.1220">Größere Karte anzeigen</a></small>-->
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+
+    <!--<include src="footer.html"></include>   Nicht mehr möglich durch andere Links mit Subpages !-->
+
+    <a href="index.html">
+      <svg class="footer__logo" alt="Homepage von Rustica - Logo Kaffebohne in Raute">
+        <use xlink:href="./icons/sprite-ru.svg#icon-logo"></use>
+      </svg>
+    </a>
+
+    <div class="footer__heading">
+      <h3>Rustica</h3>
+      <p>Café und Rösterei</p>
+    </div>
+
+
+    <div class="footer--big-box">
+
+      <div class="footer--box-ad footer--box">
+        <p>Komm uns besuchen ! <br>
+          Frauenhoferstr. 13, Kiel</p>
+      </div>
+
+      <div class="footer--box-zeit footer--box">
+        <p>Mo - Fr 8-18 Uhr<br>
+          Sa 11-18 Uhr</p>
+      </div>
+
+      <div class="footer--box-imp footer--box">
+        <p>
+          <a href="./my-subpage/impressum.html">Impressum</a><br>
+          Datenschutz<br>
+          <a href="./my-subpage/kontakt.html">Kontakt</a>
+        </p>
+      </div>
+
+      <div class="footer--box-cafe footer--box">
+        <p><a href="./my-subpage/cafe.html">Cafe</a><br>
+          <a href="./my-subpage/shop.html">Shop</a><br>
+          <a href="./my-subpage/herkunft.html">Herkunft</a>
+        </p>
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script src="js/index.js"></script>
+  <script src="js/home.js"></script>
+</body>
+
 </html>
-

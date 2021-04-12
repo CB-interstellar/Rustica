@@ -1,9 +1,9 @@
-//Menu-Leiste wird später Scroll-fähig und ändert dabei Farbe - Wie ???//
+//Menu-Leiste 
 
 .header__menu {
     height: 5.5rem;
     width: 100%;
-    background-color: transparent;              //soll später weiß !
+    background-color: $farbe-weiss;             
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,13 +16,13 @@
 .header__logo {
     height: 3.5rem;
     width: 3.5rem;
-    fill: $farbe-weiss;                          //soll später schwarz ! siehe Impressum
+    fill: $farbe-schwarz;                        
 }
 
 .header__logo--box {
   display: flex;
 }
-           
+
 .navigation {
     font-size: 1.8rem;
     line-height: 2.109rem;
@@ -42,7 +42,7 @@
   
     a {                                        
       text-decoration: none;
-      color: $farbe-weiss;
+      color: $farbe-schwarz;                      
       position: relative;
   
       &::after {
@@ -53,7 +53,7 @@
          height: 1px;
          line-height: 1;
          width: 100%;
-         background-color: $farbe-weiss;
+         background-color: currentColor;              
          transform-origin: right bottom;
          transform: scaleX(0);
          transition: transform 0.4s linear;
@@ -67,24 +67,12 @@
     }
   }
   
+.farbumschlag {
+    background-color: transparent;
+    color: $farbe-weiss !important;
+    fill: $farbe-weiss;
+  }
 
-
-//später ändern, wenn rest klappt
-.header--impressum,
-.header--kontakt {
-
-        a {                            
-            color: $farbe-schwarz;
-               
-            &::after {
-              background-color: $farbe-schwarz;
-            }
-        }
-
-        svg {
-          fill: $farbe-schwarz;
-        }
-}
 
 
 //Burger-Menu
@@ -96,32 +84,46 @@
       display: none;
     }
 
-    &__label {
-      background-color: transparent;              
-      height: 2.35rem;
-      width: 2.35rem;
+    &__btn {
+      background-color: transparent;
+      border: none;              
+      height: 4rem;
+      width: 4rem;
       position: fixed;
-      top: 1.9rem;
-      right: 7.153vw;
-      z-index: 200;                                     
-      text-align: center;                               
-      cursor: pointer;
+      top: 0.8rem;
+      right: 7.153vw; 
+      text-align: center;  
+      cursor: pointer;                                                                
     }
 
-    &__checkbox {
-      display: none;
+    &__icon {
+      display: inline-block;
+      width: 3em;
+      height: 3em;
+      fill: $farbe-schwarz;
+    }  
+
+    &--weiss{
+      fill: $farbe-weiss;
     }
 
     &__nav {
       height: 100vh;
-      width: 0;
+      width: 100vw;
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 150;
       background-color: $farbe-schwarz;
-      opacity: 0;                                                              
-      transition: all 0.8s;
+      opacity: 0;    
+      pointer-events: none;                              
+      transform:translateX(-200%);
+      transition: transform 2s;                    
+    }
+
+    &__nav.openheader {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateX(0);
     }
 
     ul {
@@ -137,7 +139,6 @@
     a {
       color: $farbe-weiss;
       text-decoration: none;
-      display: none;
 
         &:hover,
         &:active {
@@ -147,65 +148,6 @@
 
     h3 {
       padding-bottom: 2.4rem;
-    }
-
-
-    &__checkbox:checked ~ &__background {
-      transform: scale(80);           
-    }
-
-    &__checkbox:checked ~ &__nav {
-      opacity: 1;
-      width: 100%;
-    }
-
-    &__checkbox:checked ~ &__nav a {
-      display: inline;
-    }
-
-
-    &__icon {
-        position: relative;
-        margin-top: 1rem;
-
-        &,
-        &::before,
-        &::after {
-            width: 2.35rem;
-            height: 2px;
-            background-color: $farbe-weiss;
-            display: inline-block;
-        }
-
-        &::after,
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            transition: all 0.2s;
-        }
-
-        &::before {
-            top: -0.8rem;
-        }
-
-        &::after {
-            top: 0.8rem;
-        }
-    }
-
-    &__checkbox:checked + &__label &__icon {
-        background-color: transparent;             
-    }
-
-    &__checkbox:checked + &__label &__icon::before {
-        top: 0;
-        transform: rotate(135deg);
-    }
-
-    &__checkbox:checked + &__label &__icon::after {
-        top: 0;
-        transform: rotate(45deg);
     }
 }
 

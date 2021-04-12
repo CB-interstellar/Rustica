@@ -67,26 +67,74 @@
         }
     }
 
-    &--betreff {                     // das "select" versteckt hinter button Dein Betreff !!!
+    &--warnung {
+        box-shadow: none;
+        background-color: rgba($farbe-eigen, 0.3);
+        color: $farbe-eigen;
+    }
+
+    &--daten {
         position: relative;
-        width: 100%;
-        height: 4rem;
-        bottom: 4.5rem;
-    }     
+    }
+
+    &--daten input {
+        position: absolute;
+        top: 0;
+        left: -0.5rem;
+        opacity: 0;
+        width: 3rem;
+    }
+
+    &--daten input:checked + .sec-kontakt__label--daten::after {
+        opacity: 1;
+    }
+
+    &__label--daten{
+        position: absolute;
+        top: 0;
+        left: 3rem;
+
+        &.warn::before {
+            background-color: rgba($farbe-eigen, 0.3);
+        }
+
+            &::before {
+                content: "";
+                border: 2px solid;
+                border-radius: 5px;
+                width: 2rem;
+                height: 2rem;
+                position: absolute;
+                top: -0.3rem;
+                left: -3rem;
+
+                @include tablet-m {
+                    top: 0;
+                }
+            }
+
+            &::after {
+                content: "";
+                border: 0.65rem solid;
+                border-radius: 100px;
+                width: 1rem;
+                height: 1rem;
+                opacity: 0;
+                position: absolute;
+                top: 0.1rem;
+                left: -2.6rem;
+
+                @include tablet-m {
+                    top: 0.4rem;
+                }
+            }
+    }
 
     &__btn {
         color: $farbe-weiss;
         background-color: $farbe-schwarz;
         height: 5rem;
         border-radius: 5px;
-
-        &--betreff {                             // wie soll focus usw. ? doch eher schwarz bleiben ...
-            display: block;
-            width: 100%;
-            position: relative;
-            z-index: 1;
-            padding: 1.7rem 2.5rem;
-        }
 
         &--abschicken {
             margin: 4.2rem auto;
@@ -96,6 +144,7 @@
 
             @include tablet-m {
                 font-size: 18px;
+                margin-top: 10rem;
             }
 
             &:hover {
@@ -120,3 +169,91 @@
 }
 
 
+// Dropdown Menu
+
+.dropdown{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 21rem;
+    cursor: pointer;
+
+    &--betreff{
+        background: $farbe-schwarz;
+        color: $farbe-weiss;
+        padding: 1.7rem 2.5rem;
+        height: 5rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        list-style-position: inside;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+
+        &:focus {
+            outline: 1px solid;
+        }
+    }
+
+    &__icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4rem;
+        height: 5rem;
+        background: $farbe-schwarz;
+        fill: $farbe-weiss;
+        border-radius: 5px;
+        padding: 1rem;
+
+        &.expanded{
+            transform: rotate(-180deg);
+        }
+    }
+
+    &--list{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        border-radius: 0.5rem;
+        box-shadow: 0px 3px 2px 0 #a2a4b2;
+        transition: opacity .1s cubic-bezier(0, 0, 0.38, 0.9), 
+                    max-height .5s cubic-bezier(0, 0, 0.38, 0.9);
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        border: 2px solid $farbe-schwarz;
+    }
+
+    &--list-container {
+        position: relative;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__list-item {
+        padding: 0.9rem 2.5rem;
+        transition: background-color .1s linear, color .1s linear;
+        list-style-position: inside;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:hover,
+        &:focus {
+            background-color: #c4c4c4;
+        }
+    }
+}
+
+.open {
+    opacity: 1;
+    overflow: auto;
+    max-height: 20rem;
+}
